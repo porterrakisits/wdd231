@@ -3,36 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Porter Rakisits">
+    <meta name="description" content="This website is an assignment. ">
+    <title>Porter's Website</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Porfile Picture">
+        <img src="images/profile.jpg" alt="Porfile Picture" id="profile_img">
         <h1>Porter Rakisits</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">GitHub Profile</a>
-            <a href="#">LinkedIn</a>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
+        <h1 id="main_title">Home</h1>
         <section id="section1">
-            <h3>Course Work</h3>
+            <h2>Course Work</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>[text here]</li>
+                <li>[text here]</li>
+                <li>[text here]</li>
             </ul>
         </section>
         <section id="section2">
-            <h3>St. George, Utah, USA</h3>
+            <h2>St. George, Utah, USA</h2>
+            <img src="images/st_george_pic.webp" alt="Snow Canyon State Park" id="st_george_pic">
         </section>
         <section id="section3">
-            <h3>Web and Computer Programming Certificate</h3>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="buttons">
+                <button id="show-all">All Courses</button>
+                <button id="show-wdd">WDD Courses</button>
+                <button id="show-cse">CSE Courses</button>
+            </div>
+            <div id="class_display">
+                <ul></ul>
+                <div id="total-credits">Total Credits: 0</div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>
+            <span>©️</span>
+            <span id="current-year"></span>
+            <span>Porter Rakists, Utah, USA</span>
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+        <nav class="icon">
+            <a href="https://www.facebook.com/share/15kg9onkNC/" class="icon" >
+                <img src="images/facebook_logo.svg" alt="facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/porter-rakisits-45530934a?trk=people-guest_people_search-card" class="icon" >
+                <img src="images/linkedin_icon.svg" alt="linkedin">
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
+
