@@ -30,16 +30,6 @@ hamButton.addEventListener('click', () => {
 
 
 
-const form = document.querySelector('form');
-form.addEventListener('submit', function(event) {
-    const name = document.getElementById('name').value;
-    if (!name) {
-        alert('Please enter your name.');
-        event.preventDefault(); 
-    }
-});
-
-
 
 
 
@@ -177,3 +167,8 @@ document.querySelector('#show-cse').addEventListener('click', () => {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    displayCurrentYear();
+    displayLastModifiedDate();
+    renderCourses(courses);
+});

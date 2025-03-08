@@ -57,11 +57,11 @@
     }
 
     #menu::before {
-        content: "â˜°";
+        content: "☰";
     }
 
     #menu.open::before {
-        content: "âŒ";
+        content: "❌";
     }
 
     .navigation {
