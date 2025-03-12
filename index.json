@@ -1,0 +1,17 @@
+{
+    "family_name": "Rakisits",
+    "move_in_date": "2024-03-10",
+    "number_of_people": "2",
+    "visited_by_bishopric": true,
+    "family_members": [{
+        "name": "Porter",
+      "gender": "male",
+      "birthdate": "2002-11-09"
+    },
+    {
+        "name": "Makenley",
+      "gender": "female",
+      "birthdate": "2002-11-10"
+    }
+    ]
+}
