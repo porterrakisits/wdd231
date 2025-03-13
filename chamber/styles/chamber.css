@@ -1,0 +1,100 @@
+@media (max-width: 480px) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+    }
+
+
+    header {
+        background-color: var(--primary-color);
+        border: solid black;
+        padding: 10px;
+    }
+
+
+    #profile_img {
+        width: 150px;
+      }
+
+
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    .navigation {
+        display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+        list-style-type: none;
+        
+    }
+
+    .navigation.open {
+        display: flex;  
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navigation.open a {
+        display: block;  
+        background-color: var(--secondary-color);
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: black;
+        font-weight: 700;
+    }
+
+    
+    .open a {
+        display: block;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+
+
+
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+
+

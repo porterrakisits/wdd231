@@ -1,0 +1,107 @@
+
+
+@media (min-width: 481px){
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f5f5f5; 
+        color: #333; 
+    }
+
+    header {
+        background-color: #003366; 
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+    #menu {
+        background: url('images/menu-icon.svg') no-repeat center center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        margin: 0 15px;
+    }
+
+    .navigation a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        color: #ffcc00; 
+    }
+
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #members_cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+
+
+
+
+
+
+
+    footer {
+        background-color: #003366;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p span {
+        margin-right: 10px;
+    }
+
+    footer .icon a {
+        margin: 0 10px;
+    }
+
+    footer .icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+}
+
+
+
+
+
