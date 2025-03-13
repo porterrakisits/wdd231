@@ -30,6 +30,35 @@ hamButton.addEventListener('click', () => {
 
 
 
+
+
+// grid and list button
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#members_cards");
+
+
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+
+
+
+
+
+
+
 // array async stuff
 
 const url = '../data/members.json'
