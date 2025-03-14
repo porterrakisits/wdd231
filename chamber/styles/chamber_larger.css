@@ -18,6 +18,10 @@
         text-align: center;
     }
 
+    #menu {
+        display: none;
+      }
+
     header img {
         width: 100px;
         height: 100px;
@@ -106,7 +110,10 @@ footer .icon img {
 
 
 
-
+/*       cards      */
+.member_card {
+    border: solid #003366;
+}
 
 
 
