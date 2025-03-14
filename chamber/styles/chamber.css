@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #003366
+}
+
+
 @media (max-width: 480px) {
     header img {
         width: 80px;
@@ -17,6 +22,8 @@
         background-color: var(--primary-color);
         border: solid black;
         padding: 10px;
+        text-align: center;
+        color: #fff;
     }
 
 
@@ -24,7 +31,12 @@
         width: 150px;
       }
 
-
+      #grid_menu {
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
 
     #menu {
         font-size: 1.5rem;
@@ -66,11 +78,11 @@
 
     .navigation.open a {
         display: block;  
-        background-color: var(--secondary-color);
+        background-color: lightblue;
     }
 
     .navigation a:hover {
-        background-color: var(--secondary-color);
+        background-color: lightblue;
         color: black;
         font-weight: 700;
     }
@@ -89,9 +101,7 @@
 
 
 
-    footer {
-        font-size: 14px;
-    }
+    
 }
 
 

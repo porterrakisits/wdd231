@@ -1,76 +1,75 @@
 {
     "members": [
+        {
+            "name": "fake company 1",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "1",
+            "member_since": "2021"
+        },
 
-    {
-        "name": "fake company 1",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "1",
-        "member_since": "2021"
-    },
+        {
+            "name": "fake company 2",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "1",
+            "member_since": "2018"
+        },
 
-    {
-        "name": "fake company 2",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "1",
-        "member_since": "2018"
-    },
+        {
+            "name": "fake company 3",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "1",
+            "member_since": "2018"
+        },
 
-    {
-        "name": "fake company 3",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "1",
-        "member_since": "2018"
-    },
+        {
+            "name": "fake company 4",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "3",
+            "member_since": "2007"
+        },
 
-    {
-        "name": "fake company 4",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "3",
-        "member_since": "2007"
-    },
+        {
+            "name": "fake company 5",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "2",
+            "member_since": "2012"
+        },
 
-    {
-        "name": "fake company 5",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "2",
-        "member_since": "2012"
-    },
+        {
+            "name": "fake company 6",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "2",
+            "member_since": "2011"
+        },
 
-    {
-        "name": "fake company 6",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "2",
-        "member_since": "2011"
-    },
-
-    {
-        "name": "fake company 7",
-        "address": "50 S Main St, St. George, UT 84770",
-        "phone_number": "(222) 333-4444",
-        "website_url": "https://fakefiller.com/",
-        "image_file": "../chamber/images/dunder_logo.jpg",
-        "membership_level": "3",
-        "member_since": "2005"
-    }
-]
+        {
+            "name": "fake company 7",
+            "address": "50 S Main St, St. George, UT 84770",
+            "phone_number": "(222) 333-4444",
+            "website_url": "https://fakefiller.com/",
+            "image_file": "../chamber/images/dunder_logo.jpg",
+            "membership_level": "3",
+            "member_since": "2005"
+        }
+    ]
 }
 
 

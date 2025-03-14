@@ -1,4 +1,6 @@
-
+:root {
+    --primary-color: #003366
+}
 
 @media (min-width: 481px){
     
@@ -17,7 +19,6 @@
     }
 
     header img {
-        border-radius: 50%;
         width: 100px;
         height: 100px;
     }
@@ -27,8 +28,7 @@
         font-size: 24px;
     }
 
-    #menu {
-        background: url('images/menu-icon.svg') no-repeat center center;
+    #grid_menu {
         width: 40px;
         height: 40px;
         border: none;
@@ -74,32 +74,37 @@
 
 
 
-
-
-
-    footer {
-        background-color: #003366;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer p span {
-        margin-right: 10px;
-    }
-
-    footer .icon a {
-        margin: 0 10px;
-    }
-
-    footer .icon img {
-        width: 30px;
-        height: 30px;
-    }
-
-
-
 }
+
+
+
+
+
+/* EVERYTHING */
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+ }
+
+footer p span {
+    margin-right: 10px;
+}
+
+footer .icon a {
+    margin: 0 10px;
+}
+
+footer .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
 
 
 

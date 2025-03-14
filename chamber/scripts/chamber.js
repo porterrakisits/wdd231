@@ -61,7 +61,7 @@ function showList() {
 
 // array async stuff
 
-const url = '../data/members.json'
+const url = 'data/members.json'
 
 const cards = document.querySelector('#members_cards');
 
