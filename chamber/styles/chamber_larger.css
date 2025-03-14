@@ -2,7 +2,7 @@
     --primary-color: #003366
 }
 
-@media (min-width: 481px){
+@media (min-width: 381px){
     
     body {
         font-family: Arial, sans-serif;
@@ -68,13 +68,7 @@
         text-align: center;
     }
 
-    #members_cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-
+    
 
 
 
@@ -115,5 +109,14 @@ footer .icon img {
     border: solid #003366;
 }
 
+#members_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
 
+
+#members_cards.list {
+    display: block; 
+}
 
