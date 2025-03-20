@@ -37,7 +37,7 @@ hamButton.addEventListener('click', () => {
 
 
 
-// array async stuff
+// display member cards 
 
 const url = 'data/members.json'
 
@@ -50,25 +50,45 @@ async function getBusinessData(url) {
     displayBusinessess(data.members);
 }
 
-const displayBusinessess = (members) =>{
-    members.forEach((member) => {
+
+function displaySpotlights(members) {
+
+    const filteredMembers = members.filter(member => member.membership_level === '3' || member.membership_level === '2');
+
+    const randomSpotlights = getRandomMembers(filteredMembers, 2, 3);
+
+    randomSpotlights.forEach(member => {
         const memberCard = document.createElement('section');
         memberCard.classList.add('member_card');
         memberCard.innerHTML = `
             <h2>${member.name}</h2>
-            <p>${member.address}</p>
-            <p>${member.phone_number}</p>
-            <a href="${member.website_url}" >Visit Website</a>
             <img src="${member.image_file}" alt="${member.name} logo">
+            <p>Phone: ${member.phone_number}</p>
+            <p>Address: ${member.address}</p>
+            <p><a href="${member.website_url}" target="_blank">Visit Website</a></p>
             <p>Membership Level: ${member.membership_level}</p>
             <p>Member Since: ${member.member_since}</p>
         `;
-        cards.appendChild(memberCard);
+        membersCards.appendChild(memberCard);
     });
 }
 
-getBusinessData(url)
 
+
+function getRandomMembers(members, min, max) {
+    const numberOfMembers = Math.floor(Math.random() * (max - min + 1)) + min;
+    const randomMembers = [];
+    while (randomMembers.length < numberOfMembers) {
+        const randomIndex = Math.floor(Math.random() * members.length);
+        if (!randomMembers.includes(members[randomIndex])) {
+            randomMembers.push(members[randomIndex]);
+        }
+    }
+    return randomMembers;
+}
+
+
+getBusinessData()
 
 
 
