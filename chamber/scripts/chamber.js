@@ -32,28 +32,6 @@ hamButton.addEventListener('click', () => {
 
 
 
-// grid and list button
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("#members_cards");
-
-
-
-gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); 
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
-
-
-
 
 
 
@@ -95,6 +73,14 @@ getBusinessData(url)
 
 
 
+
+
+
+
+
+
+
+
         // weather        
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
@@ -102,7 +88,7 @@ const captionDesc = document.querySelector('figcaption');
 
 
 
-const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=172b7656bc684338c07b0c9f48954761';  
+const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=37.10&lon=-113.58&units=imperial&appid=172b7656bc684338c07b0c9f48954761';  
 
 
 async function apiFetch() {
@@ -125,10 +111,33 @@ async function apiFetch() {
 
 
   function displayWeather(data) {
-    currentTemp.innerHTML = `${data.temp}&deg;F`;
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
-    captionDesc.textContent = `${desc}`;
+    captionDesc.textContent = data.current.weather[0].description;
+    ;
   }
+
+
+  function displayForecast(data) {
+    forecastContainer.innerHTML = '';
+    const forecastDays = data.daily.slice(0,3);
+    forecastDays.forEach(day => {
+        const forecastDiv = document.createElement('div');
+        forecastDiv.classList.add('forecast_day');
+        const date = new Date(day.dt * 1000).toLocaleDateString();
+        forecastDiv.innerHTML = `
+            <h3>${date}</h3>
+            <p>High: ${day.temp.max}&deg;F</p>
+            <p>Low: ${day.temp.min}&deg;F</p>
+        `;
+        forecastContainer.appendChild(forecastDiv)
+    });
+  }
+
+
+
+
+
