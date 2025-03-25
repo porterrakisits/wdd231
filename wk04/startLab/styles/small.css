@@ -1,0 +1,5 @@
+*{box-sizing: border-box;}
+
+::backdrop {
+    background-color: rgba(255, 128, 0, 0.5);
+}
