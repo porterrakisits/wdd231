@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Porter Rakisits">
-    <meta name="description" content="This website is the Directory for the St. George Chamber of Commerce. ">
+    <meta name="description" content="This page has the form to join the St. George Chamber of Commerce. ">
     <meta property="og:title" content="St. George Chamber of Commerce">
     <meta property="og:type" content="website"> 
     <meta property="og:image" content="images/st_george.jpg">
-    <meta property="og:url" content="https://porterrakisits.github.io/wdd231/chamber/directory.html">
-    <title>St. George Chamber of Commerce directory</title>
+    <meta property="og:url" content="https://porterrakisits.github.io/wdd231/chamber/join.html">
+    <title>St. George Chamber of Commerce Join page</title>
     <link rel="icon" href="images/favicon_st_g_logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../chamber/styles/chamber.css">
@@ -24,19 +24,22 @@
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li> 
-                <li><a href="#">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="grid_menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        <div id="members_cards"></div>
+        <form action="">
+            <label for="first">First Name</label>
+            <input type="text" name="first" id="first" title="Applicants First Name" autocomplete="given-first-name" required>
+            <label for="last">last Name</label>
+            <input type="text" name="last" id="last" title="Applicants Last Name" autocomplete="given-last-name" required>
+            <label for="organization">Organization Title</label>
+            <input type="text" name="organization" id="organization" title="Applicants Orginizations Title" autocomplete="orginization-title" required>
+        </form>
     </main>
 
     <footer>
