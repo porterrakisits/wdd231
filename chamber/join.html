@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../chamber/styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber_larger.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/chamber.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -31,15 +31,73 @@
         </nav>
     </header>
 
-    <main>
-        <form action="">
-            <label for="first">First Name</label>
-            <input type="text" name="first" id="first" title="Applicants First Name" autocomplete="given-first-name" required>
-            <label for="last">last Name</label>
-            <input type="text" name="last" id="last" title="Applicants Last Name" autocomplete="given-last-name" required>
-            <label for="organization">Organization Title</label>
-            <input type="text" name="organization" id="organization" title="Applicants Orginizations Title" autocomplete="orginization-title" required>
-        </form>
+    <main id="join_main">
+        <section>
+            <form action="">
+                <h2>Application Form</h2>
+            
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" title="Applicants First Name" autocomplete="given-first-name" required>
+                
+                <label for="last">last Name</label>
+                <input type="text" name="last" id="last" title="Applicants Last Name" autocomplete="given-last-name" required>
+                
+                <label for="organization_title">Organization Title</label>
+                <input type="text" name="organization_title" id="organization_title" title="Applicants Orginizations Title" autocomplete="orginization-title" required>
+                
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" title="Email Address" autocomplete="email-address" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" title="Applicants Phone Number" autocomplete="phone-number" required>
+                
+                <label for="organization">Business/Orginizations Name</label>
+                <input type="text" name="organization" id="organization" title="Applicants Business/Orginizations Name" autocomplete="organization" required>
+
+                <label>
+                    <input type="radio" name="option" value="option1" required>
+                    NP Membership (for non profit organizations)
+                </label><br>
+                
+                <label>
+                    <input type="radio" name="option" value="option2">
+                    Bronze Membership
+                </label><br>
+                
+                <label>
+                    <input type="radio" name="option" value="option3">
+                    Silver Membership
+                </label><br>
+                
+                <label>
+                    <input type="radio" name="option" value="option4">
+                    Gold Membership
+                </label><br>
+
+                <label for="description">Business/Organization Description</label>
+                <textarea name="description" id="description" title="Description of Applicant's Business/Organization" required></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+
+                <input type="submit" name="submit" id="submit" value="Apply Now!">
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Membership Levels</h2>
+            <div id="showHere"></div>
+
+            <dialog id="mydialog">
+                <div>
+                    <h2 id="modal-title">Sample Title</h2>
+                    <button id="myclose">X</button>
+                </div>
+                <ul id="modal-benefits"></ul>
+            </dialog>
+        
+        </aside>
+
     </main>
 
     <footer>

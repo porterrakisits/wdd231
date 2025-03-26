@@ -113,6 +113,28 @@
 
 
 
+
+
+
+
+
+    #join_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -160,4 +182,18 @@ footer .icon img {
 #members_cards.list {
     display: block; 
 }
+
+
+
+
+
+
+
+
+#thanks_main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
 

@@ -161,3 +161,78 @@ async function apiFetch() {
 
 
 
+
+
+
+
+//        modals for join page
+
+import { membershipLevels } from "../scripts/memberships.js";
+
+const showHere = document.querySelector("#showHere")
+const mydialog = document.querySelector("#mydialog")
+const myclose = document.querySelector("#myclose")
+
+myclose.addEventListener("click", () => mydialog.close())
+
+function displayMembershipCards(data) {
+    data.forEach(level => {
+        const card = document.createElement("div");
+        card.classList.add("membership-card");
+
+        const title = document.createElement("h3");
+        title.textContent = level.name;
+        card.appendChild(title);
+
+        const description = document.createElement("p");
+        description.textContent = `Cost: ${level.cost}`;
+        card.appendChild(description);
+
+        const learnMoreLink = document.createElement("a");
+        learnMoreLink.href = "#";
+        learnMoreLink.textContent = "Learn More";
+        
+        learnMoreLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            openModal(level);
+        });
+
+        card.appendChild(learnMoreLink);
+        showHere.appendChild(card);
+    });
+}
+
+
+
+
+function openModal(level) {
+    const modalTitle = document.getElementById("modal-title");
+    const modalBenefits = document.getElementById("modal-benefits");
+
+    modalTitle.textContent = level.name;
+    modalBenefits.innerHTML = ""; 
+
+    level.benefits.forEach(benefit => {
+        const li = document.createElement("li");
+        li.textContent = benefit;
+        modalBenefits.appendChild(li);
+    });
+
+    mydialog.showModal();
+}
+
+
+
+
+
+
+myclose.addEventListener("click", () => {
+    mydialog.close();
+});
+
+
+displayMembershipCards(membershipLevels)
+
+
+
+
