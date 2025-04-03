@@ -236,3 +236,66 @@ displayMembershipCards(membershipLevels)
 
 
 
+
+
+
+
+
+// discover page stuff
+
+
+const discoverdataURL = 'data/discover.json';
+
+fetch(discoverdataURL)
+    .then(response => response.json())
+    .then(data => generateDiscover(data));
+
+function generateDiscover(data) {
+    const container = document.querySelector('.discover_cards');
+    container.innerHTML = '';
+
+    data.items.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('discover_card');
+        card.innerHTML = 
+            `<figure>
+                <img src="images/${item.image}" alt="${item.name}" class="card_img"></img>
+                <figcaption>${item.name}</figcaption>
+            </figure>
+            <address>${item.address}</address>
+            <p>${item.description}</p>
+            <button class="learn_more">Learn More</button>
+            `;
+        container.appendChild(card)
+
+    });
+    displayLastVisit();
+}
+
+
+function displayLastVisit() {
+    const LastVisit = localStorage.getItem('lastVisit');
+    const currentVisit = new Date();
+    const messageElement = document.createElement('p');
+
+    if (!lastVisit) {
+        messageElement.textContent = 'Welcome to St. George Chamber of Commerce!';
+    } else {
+        const diff = Math.floor((currentVisit - new Date(lastVisit)) / (1000 * 3600 * 24));
+        if (diff < 1) {
+            messageElement.textContent = 'Back so soon! Awesome!';
+        } else if (diff === 1) {
+            messageElement.textContent = 'Back so soon! Awesome!';
+        } else {
+            messageElement.textContent = `You last visited ${diff} days ago.`;
+        }
+    }
+
+    document.body.insertBefore(messageElement, document.querySelector('main'));
+    localStorage.setItem('lastVisit', currentVisit);
+}
+
+
+
+
+

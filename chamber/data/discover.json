@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Lip Trix Boardshop",
+            "image": "images/liptrix.webp",
+            "address": "105 N 500 E, St. George, UT 84770",
+            "description": "Skateboarding, snowboarding, wakeboarding, and longboarding shop offering clothing and rentals."
+        },
+        {
+            "name": "Island Grinds",
+            "image": "island.webp",
+            "address": "1973 W Sunset Blvd, St. George, UT 84770",
+            "description": "Casual restaurant serving up Hawaiian favorites such as teriyaki chicken and katsu, along with mac salad."
+        },
+        {
+            "name": "Rowdy's Range",
+            "image": "rowdys.webp",
+            "address": "610 Industrial Rd, St. George, UT 84770",
+            "description": "Indoor shooting range and firearms store."
+        },
+        {
+            "name": "Farmstead Bakery",
+            "image": "farmstead.webp",
+            "address": "18 S 200 W, St. George, UT 84770",
+            "description": "Casual bakery and patisserie specializing in European breads, pastries, and sandwiches."
+        },
+        {
+            "name": "The Biscuit Bus",
+            "image": "bisuit.webp",
+            "address": "1094 W 1600 S #100, St. George, UT 84770",
+            "description": "Restruant and mobile caterer"
+        },
+        {
+            "name": "Red Rock Bicycle",
+            "image": "redrock.webp",
+            "address": "446 W 100 S, St. George, UT 84770",
+            "description": "Local bicycle store and repairs."
+        },
+        {
+            "name": "River Rock Roasting",
+            "image": "riverrock.webp",
+            "address": "394 S State St, La Verkin, UT 84745",
+            "description": "Low-key coffeehouse offering espresso drinks, baked goods & sandwiches, plus canyon views."
+        },
+        {
+            "name": "Sunpro",
+            "image": "sunpro.webp",
+            "address": "3781 River Rd, St. George, UT 84790",
+            "description": "Building Materials Store"
+        }
+    ]
+}
