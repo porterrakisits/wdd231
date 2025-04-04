@@ -248,6 +248,7 @@ displayMembershipCards(membershipLevels)
 
 
 const discoverdataURL = 'data/discover.json';
+const discovercards = document.querySelector('#discover_cards');
 
 fetch(discoverdataURL)
     .then(response => response.json())

@@ -1,0 +1,89 @@
+:root {
+    /* Colors */
+    --primary-color: #D93F3F; 
+    --secondary-color: #D9C8A3; 
+  
+    /* Fonts */
+    --font-body: 'Roboto', sans-serif; /* body text */
+    --font-heading: 'Pacifico', cursive; /*  headings */
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center; 
+    gap: 55px; 
+    padding: 20px 0; 
+}
+
+
+
+
+@media (max-width: 420px) {
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        
+    }
+
+    .navigation.open {
+        display: flex;  /* Show the menu when open */
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navigation.open a {
+        display: block;  /* Show links when menu is open */
+        background-color: var(--secondary-color);
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: black;
+        font-weight: 700;
+    }
+
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+
+
+
+}
+
+
+
+
