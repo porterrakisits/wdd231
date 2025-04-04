@@ -244,6 +244,9 @@ displayMembershipCards(membershipLevels)
 // discover page stuff
 
 
+
+
+
 const discoverdataURL = 'data/discover.json';
 
 fetch(discoverdataURL)
@@ -256,7 +259,7 @@ function generateDiscover(data) {
 
     data.items.forEach(item => {
         const card = document.createElement('div');
-        card.classList.add('discover_card');
+        card.classList.add('discover_cards');
         card.innerHTML = 
             `<figure>
                 <img src="images/${item.image}" alt="${item.name}" class="card_img"></img>
@@ -269,7 +272,6 @@ function generateDiscover(data) {
         container.appendChild(card)
 
     });
-    displayLastVisit();
 }
 
 
@@ -278,7 +280,7 @@ function displayLastVisit() {
     const currentVisit = new Date();
     const messageElement = document.createElement('p');
 
-    if (!lastVisit) {
+    if (LastVisit) {
         messageElement.textContent = 'Welcome to St. George Chamber of Commerce!';
     } else {
         const diff = Math.floor((currentVisit - new Date(lastVisit)) / (1000 * 3600 * 24));
@@ -298,4 +300,5 @@ function displayLastVisit() {
 
 
 
-
+generateDiscover(data);
+displayLastVisit();
