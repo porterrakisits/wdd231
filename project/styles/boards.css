@@ -1,12 +1,13 @@
 :root {
     /* Colors */
-    --primary-color: #D93F3F; 
+    --primary-color: #e87070; 
     --secondary-color: #D9C8A3; 
   
     /* Fonts */
     --font-body: 'Roboto', sans-serif; /* body text */
     --font-heading: 'Pacifico', cursive; /*  headings */
   }
+
 
   .icon {
     display: flex;
@@ -15,10 +16,51 @@
     padding: 20px 0; 
 }
 
+h1 {
+    font-family: var(--font-heading);
+}
+
+#hero_section {
+    position: relative; /* To position the image within the section */
+    width: 100%; /* Full width */
+    height: 30vh; /* Full viewport height */
+    overflow: hidden; /* Ensures any overflowing content is hidden */
+}
+
+#heroimg {
+    position: absolute; /* Position the image within the section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image stretch to full width */
+    height: 100%; /* Make the image stretch to full height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center; /* Centers the image */
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    height: 180px;
+}
 
 
 
-@media (max-width: 420px) {
+
+
+
+
+@media (max-width: 320px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--primary-color);
+        border: solid black;
+        padding: 10px;
+      }
 
     #menu {
         font-size: 1.5rem;
@@ -78,6 +120,46 @@
         list-style-type: none;
         padding: 0;
     }
+
+
+
+
+    .home_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--secondary-color);
+    }
+
+
+    .main_section {
+        grid-row: 1/2;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: var(--secondary-color);
+    }
+
+    #hero_section {
+        border: solid black;
+    }
+
+    #main_section {
+        border: solid black;
+        padding: 20px;
+        margin: 5px;
+        background-color: white;
+    }
+
+    aside {
+        border: solid black;
+        padding: 20px;
+        margin: 5px;
+        background-color: white;
+    }
+
+
 
 
 
