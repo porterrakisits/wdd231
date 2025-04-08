@@ -38,7 +38,7 @@ hamButton.addEventListener('click', () => {
 fetch('data/inventory.json')
     .then(response => response.json())
     .then(data => {
-        displayInventory(data.inventory); // Assuming the array is inside 'items'
+        displayInventory(data.inventory); 
     })
     .catch(error => console.error('Error loading inventory:', error));
 
