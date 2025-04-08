@@ -1,13 +1,15 @@
 {
     "inventory": [
         {
+            "id": "1",
             "name": "board1",
             "price": "$150",
-            "img": "../project/images/board1.jpg",
-            "description": ""
+            "img": "images/board1.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex ullam vel sint optio sequi esse qui repudiandae nemo nobis."
 
         },
         {
+            "id": "2",
             "name": "board2",
             "price": "$150",
             "img": "../project/images/board2.jpg",
@@ -15,6 +17,7 @@
 
         },
         {
+            "id": "3",
             "name": "board3",
             "price": "$150",
             "img": "../project/images/board3.jpg",
@@ -22,6 +25,7 @@
 
         },
         {
+            "id": "4",
             "name": "board4",
             "price": "$150",
             "img": "../project/images/board4.jpg",
@@ -29,6 +33,7 @@
 
         },
         {
+            "id": "5",
             "name": "board5",
             "price": "$150",
             "img": "../project/images/board5.jpg",
@@ -36,6 +41,7 @@
 
         },
         {
+            "id": "6",
             "name": "board6",
             "price": "$150",
             "img": "../project/images/board6.jpg",
@@ -43,6 +49,7 @@
 
         },
         {
+            "id": "7",
             "name": "board7",
             "price": "$150",
             "img": "../project/images/board7.jpg",
@@ -50,6 +57,7 @@
 
         },
         {
+            "id": "8",
             "name": "board8",
             "price": "$150",
             "img": "../project/images/board8.jpg",

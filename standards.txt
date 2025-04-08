@@ -1,0 +1,21 @@
+All file and folders are named and organized according to the course naming conventions.
+
+All HTML was valid, semantic, contemporary (not deprecated), and relevant (necessary for content layout), and enhancing the accessibility and structure of all pages.
+
+All CSS was valid and adheres to standards, ensuring cross-browser compatibility. No unused nor unnecessarily duplicated rules nor declarations.
+
+The website is responsive, visually appealing (no violations of proximity, alignment, repetition, and contrast design principles).
+
+The layout of each page on the site was more than a simple, default, single stacked layout of elements.
+
+The website's content supports the purpose and target audience.
+
+Any image or frame used below the fold utilizes native lazy loading or equivalent practice.
+
+An HTML form that meets the standards presented in the course was complete and functional.
+
+Exceptional and original implementation of required functionality and handling is found. All required JavaScript features are found.
+
+The website contains no spelling nor grammatical errors.
+
+

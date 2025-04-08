@@ -37,8 +37,11 @@ hamButton.addEventListener('click', () => {
 
 fetch('data/inventory.json')
     .then(response => response.json())
-    .then(data => displayInventory(data))
-    .catch(error => console.error('error loading inventory', error));
+    .then(data => {
+        displayInventory(data.inventory); // Assuming the array is inside 'items'
+    })
+    .catch(error => console.error('Error loading inventory:', error));
+
 
 function displayInventory(data) {
     const myShop = document.querySelector('#myShop');
@@ -48,7 +51,7 @@ function displayInventory(data) {
         card.classList.add('product-card');
 
         card.innerHTML = `
-            <img src="${item.image}" alt="${item.name}"
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
             <h3>${item.name}</h3>
             <p>${item.price}</p>
             <button class = "view-details" data-id="${item.id}">View Details</button>
