@@ -1,0 +1,60 @@
+{
+    "inventory": [
+        {
+            "name": "board1",
+            "price": "$150",
+            "img": "../project/images/board1.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board2",
+            "price": "$150",
+            "img": "../project/images/board2.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board3",
+            "price": "$150",
+            "img": "../project/images/board3.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board4",
+            "price": "$150",
+            "img": "../project/images/board4.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board5",
+            "price": "$150",
+            "img": "../project/images/board5.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board6",
+            "price": "$150",
+            "img": "../project/images/board6.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board7",
+            "price": "$150",
+            "img": "../project/images/board7.jpg",
+            "description": ""
+
+        },
+        {
+            "name": "board8",
+            "price": "$150",
+            "img": "../project/images/board8.jpg",
+            "description": ""
+
+        }
+    ]
+}

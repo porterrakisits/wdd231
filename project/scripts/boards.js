@@ -26,3 +26,58 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+
+
+
+
+// display inventory
+
+fetch('data/inventory.json')
+    .then(response => response.json())
+    .then(data => displayInventory(data))
+    .catch(error => console.error('error loading inventory', error));
+
+function displayInventory(data) {
+    const myShop = document.querySelector('#myShop');
+
+    data.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}"
+            <h3>${item.name}</h3>
+            <p>${item.price}</p>
+            <button class = "view-details" data-id="${item.id}">View Details</button>
+        `;
+        myShop.appendChild(card)
+
+        card.querySelector('.view-details').addEventListener('click', () => {
+            openDialog(item);
+        });
+    });
+}
+
+
+function openDialog(item) {
+    const dialog = document.querySelector('dialog');
+    const myDescription = document.querySelector('#myDescription');
+    
+    myDescription.textContent = item.description; 
+    dialog.querySelector('h3').textContent = item.name;
+    
+    dialog.showModal();
+    
+    const myclose = document.querySelector('#myclose');
+    myclose.addEventListener('click', () => {
+        dialog.close();
+    });
+}
+
+
+
+
+
