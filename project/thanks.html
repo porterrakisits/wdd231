@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Porter Rakisits">
-    <meta name="description" content="This is the contact page for the Roadrunner Skim Co.">
-    <title>Roadrunner Skim Co. Contact Page</title>
+    <meta name="description" content="This is the shop page for the Roadrunner Skim Co.">
+    <title>Roadrunner Skim Co. Shop Page</title>
     <link rel="stylesheet" href="styles/boards.css">
     <link rel="stylesheet" href="styles/board_large.css">
     <script src="scripts/boards.js" defer></script>
@@ -19,36 +19,22 @@
             <ul>
                 <li><a href="index.html">Home</a></li> 
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="contact_main">
+    <main id="thanks_main">
+        <h2>Heres what you submitted!</h2>
+        <div id="display_submission">
+            <p>Name: <span id="displayName"></span></p>
+            <p>Email: <span id="displayEmail"></span></p>
+            <p>Phone Number: <span id="displayPhone"></span></p>
+            <p>Your Message: <span id="displayMessage"></span></p>
+        </div>
+        <p>Thank you for filling out the application! We will reach out to you shortly!</p>
+        <p>Use the navigation bar to return back to the website!</p>
         
-        <section id="contact_section">
-            <form  id="contact_form">
-                <h2>Reach out to us!</h2>
-
-                <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" title="Full Name" autocomplete="name" required>
-                
-                <label for="email">Email Address</label>
-                <input type="text" name="email" id="email" title="Email Address" autocomplete="email" required>
-                
-                <label for="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" title="Phone Number" autocomplete="tel" required>
-                
-                <label for="message">Message</label>
-                <textarea name="message" id="message" title="message" required></textarea>
-
-                <input type="hidden" name="timestamp" id="timestamp" value="">
-
-                <input type="submit" name="submit" id="submit" value="Send Message!">
-                
-            </form>
-        </section>
-
     </main>
 
     <footer>
@@ -64,7 +50,7 @@
             <a href="https://www.facebook.com/share/15kg9onkNC/" class="icon" >
                 <img src="images/facebook_logo.svg" alt="facebook" loading="lazy">
             </a>
-            <a href="#" class="icon" >
+            <a href="" class="icon" >
                 <img src="images/insta_logo.svg" alt="linkedin" loading="lazy">
             </a>
         </nav>

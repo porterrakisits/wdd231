@@ -35,12 +35,17 @@ hamButton.addEventListener('click', () => {
 
 // display inventory
 
-fetch('data/inventory.json')
-    .then(response => response.json())
-    .then(data => {
-        displayInventory(data.inventory); 
-    })
-    .catch(error => console.error('Error loading inventory:', error));
+async function loadInventory() {
+    try {
+        const response = await fetch('data/inventory.json');
+        const data = await response.json();
+        displayInventory(data.inventory);
+    } catch (error) {
+        console.error('Error loading inventory:', error);
+    }
+}
+
+loadInventory();
 
 
 function displayInventory(data) {
@@ -79,6 +84,48 @@ function openDialog(item) {
         dialog.close();
     });
 }
+
+
+
+
+//      localStorage and page redirect for form
+const contactForm = document.getElementById('contact_form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault(); 
+
+        const formData = {
+            name: document.getElementById('name').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            phone: document.getElementById('phone').value.trim(),
+            message: document.getElementById('message').value.trim(),
+            timestamp: new Date().toISOString()
+            
+        };
+
+        localStorage.setItem('contactFormSubmission', JSON.stringify(formData));
+
+        window.location.href = 'thanks.html';
+    });
+}
+
+
+
+    const data = JSON.parse(localStorage.getItem("contactFormSubmission"));
+
+    if (data) {
+        document.getElementById("displayName").textContent = data.name;
+        document.getElementById("displayEmail").textContent = data.email;
+        document.getElementById("displayPhone").textContent = data.phone;
+        document.getElementById("displayMessage").textContent = data.message;
+    } 
+    else {
+        document.getElementById("thanks_main").innerHTML += "<p>No form data found.</p>";
+    }
+
+
+
 
 
 

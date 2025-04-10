@@ -50,9 +50,6 @@ form {
     display: grid;
 }
 
-label {
-    align-items: left;
-}
 
 form input[type="submit"] {
     background-color: #4CAF50;
@@ -70,7 +67,17 @@ form input[type="submit"]:hover {
 }
 
 
+#thanks_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
 
+#display_submission {
+    border: solid;
+    background-color: white;
+    margin: 50px 100px 50px;
+}
 
 
 

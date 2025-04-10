@@ -2,67 +2,72 @@
     "inventory": [
         {
             "id": "1",
-            "name": "board1",
-            "price": "$150",
+            "name": "Sand Fish",
+            "price": "$175",
             "image": "images/board1.jpg",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex ullam vel sint optio sequi esse qui repudiandae nemo nobis."
+            "description": "Perfect for cruising sandy beaches and slaying urban skim spots. The HPL and Poplar have the perfect flex. Adrien designed this shape (45.00x 21.75)to blend freestyle and freeride and to excel in every situation. The cutouts on the tail allow for a wide stable waist but a narrow tail that can be leveraged for control and pop!"
 
         },
         {
             "id": "2",
-            "name": "board2",
-            "price": "$150",
+            "name": "Red Streamline",
+            "price": "$175",
             "image": "../project/images/board2.jpg",
-            "description": ""
+            "description": "Great for lightweight riders or riders who prefer more flex. These boards are constructed with a newly engineered maple core which is light in weight and snappy under the feet. The Flex Streamline has great feel and is perfect for getting big pop, cruising, or hitting rails and boxes. The DB Flex Streamline Small skimboard is a flatland style board featuring maple & HPL construction. The DB Flex Streamline Small is 37.75 inches long, 17.625 inches wide and weighs 5.6lbs."
 
         },
         {
             "id": "3",
-            "name": "board3",
-            "price": "$150",
+            "name": "The Little Guy",
+            "price": "$50",
             "image": "../project/images/board3.jpg",
-            "description": ""
+            "description": "Small and simple, this is our most affordable board. Perfect for kids just starting out."
 
         },
         {
             "id": "4",
-            "name": "board4",
-            "price": "$150",
+            "name": "Streamline Pro",
+            "price": "$200",
             "image": "../project/images/board4.jpg",
-            "description": ""
+            "description": "Flex Skimboards have the same great maple core just a little thinner.  This allows for a slightly softer flex great for lighter riders. "
 
         },
         {
             "id": "5",
-            "name": "board5",
-            "price": "$150",
+            "name": "Blue Streamline",
+            "price": "$175",
             "image": "../project/images/board5.jpg",
-            "description": ""
+            "description": "Great for lightweight riders or riders who prefer more flex. These boards are constructed with a newly engineered maple core which is light in weight and snappy under the feet. The Flex Streamline has great feel and is perfect for getting big pop, cruising, or hitting rails and boxes. The DB Flex Streamline Small skimboard is a flatland style board featuring maple & HPL construction. The DB Flex Streamline Small is 37.75 inches long, 17.625 inches wide and weighs 5.6lbs."
 
         },
         {
             "id": "6",
-            "name": "board6",
-            "price": "$150",
+            "name": "Wake Breaker",
+            "price": "$350",
             "image": "../project/images/board6.jpg",
-            "description": ""
+            "description": "Our option for those looking to hit wave. Wake Breaker is out only fiberglass board. A versitile choice for those ocean shore breaks, or wake surfing."
 
         },
         {
             "id": "7",
-            "name": "board7",
-            "price": "$150",
+            "name": "Big Brother",
+            "price": "$75",
             "image": "../project/images/board7.jpg",
-            "description": ""
+            "description": "Still a beginner to the sport but to big for the Little Wood Board? Big Brother is the other affordable option for newcommers. "
 
         },
         {
             "id": "8",
-            "name": "board8",
-            "price": "$150",
+            "name": "Raza Streamline Pro",
+            "price": "$210",
             "image": "../project/images/board8.jpg",
-            "description": ""
+            "description": "Flex Skimboards have the same great maple core just a little thinner.  This allows for a slightly softer flex great for lighter riders. "
 
         }
     ]
 }
+
+
+
+
+
