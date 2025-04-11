@@ -47,7 +47,7 @@ const cards = document.querySelector('#members_cards');
 async function getBusinessData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    displayBusinessess(data.members);
+    displaySpotlights(data.members);
 }
 
 
@@ -58,9 +58,9 @@ function displaySpotlights(members) {
     const randomSpotlights = getRandomMembers(filteredMembers, 2, 3);
 
     randomSpotlights.forEach(member => {
-        const memberCard = document.createElement('section');
-        memberCard.classList.add('member_card');
-        memberCard.innerHTML = `
+        let memberCards = document.createElement('section');
+        memberCards.classList.add('member_card');
+        memberCards.innerHTML = `
             <h2>${member.name}</h2>
             <img src="${member.image_file}" alt="${member.name} logo">
             <p>Phone: ${member.phone_number}</p>
@@ -69,7 +69,7 @@ function displaySpotlights(members) {
             <p>Membership Level: ${member.membership_level}</p>
             <p>Member Since: ${member.member_since}</p>
         `;
-        membersCards.appendChild(memberCard);
+        // memberCards.appendChild(memberCard);
     });
 }
 
@@ -88,7 +88,7 @@ function getRandomMembers(members, min, max) {
 }
 
 
-getBusinessData()
+getBusinessData(url)
 
 
 
@@ -116,7 +116,7 @@ async function apiFetch() {
       const response = await fetch(weatherUrl);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); 
+        // console.log(data); 
         displayWeather(data); // uncomment when ready
       } else {
           throw Error(await response.text());
@@ -231,7 +231,7 @@ myclose.addEventListener("click", () => {
 });
 
 
-displayMembershipCards(membershipLevels)
+displayMembershipCards(membershipLevels);
 
 
 
@@ -241,65 +241,70 @@ displayMembershipCards(membershipLevels)
 
 
 
-// discover page stuff
+// discover page stuff 
+
+
+
+const discoverdataURL = '../data/discover.json';
+const discovercards = document.querySelector('.discover_cards');
+
+// fetch(discoverdataURL)
+//     .then(response => response.json())
+//     .then(data => generateDiscover(data));
+
+// async function getDiscoverCard(url) {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     generateDiscover(data.items);
+// }
+
+// function generateDiscover(data) {
+//     console.log("this is a test")
+//     const container = document.querySelector('.discover_cards');
+//     container.innerHTML = '<p>hello there</p>';
+
+//     data.items.forEach(item => {
+//         const card = document.createElement('div');
+//         card.classList.add('discover_cards');
+//         card.innerHTML = 
+//             `<figure>
+//                 <img src="images/${item.image}" alt="${item.name}" class="card_img"></img>
+//                 <figcaption>${item.name}</figcaption>
+//             </figure>
+//             <address>${item.address}</address>
+//             <p>${item.description}</p>
+//             <button class="learn_more">Learn More</button>
+//             `;
+//         container.appendChild(card)
+
+//     });
+// }
+
+
+// function displayLastVisit() {
+//     const LastVisit = localStorage.getItem('lastVisit');
+//     const currentVisit = new Date();
+//     const messageElement = document.createElement('p');
+
+//     if (!LastVisit) {
+//         messageElement.textContent = 'Welcome to St. George Chamber of Commerce!';
+//     } else {
+//         const diff = Math.floor((currentVisit - new Date(LastVisit)) / (1000 * 3600 * 24));
+//         if (diff < 1) {
+//             messageElement.textContent = 'Back so soon! Awesome!';
+//         } else if (diff === 1) {
+//             messageElement.textContent = 'Back so soon! Awesome!';
+//         } else {
+//             messageElement.textContent = `You last visited ${diff} days ago.`;
+//         }
+//     }
+
+//     document.body.insertBefore(messageElement, document.querySelector('main'));
+//     localStorage.setItem('lastVisit', currentVisit);
+// }
 
 
 
 
-
-const discoverdataURL = 'data/discover.json';
-const discovercards = document.querySelector('#discover_cards');
-
-fetch(discoverdataURL)
-    .then(response => response.json())
-    .then(data => generateDiscover(data));
-
-function generateDiscover(data) {
-    const container = document.querySelector('.discover_cards');
-    container.innerHTML = '';
-
-    data.items.forEach(item => {
-        const card = document.createElement('div');
-        card.classList.add('discover_cards');
-        card.innerHTML = 
-            `<figure>
-                <img src="images/${item.image}" alt="${item.name}" class="card_img"></img>
-                <figcaption>${item.name}</figcaption>
-            </figure>
-            <address>${item.address}</address>
-            <p>${item.description}</p>
-            <button class="learn_more">Learn More</button>
-            `;
-        container.appendChild(card)
-
-    });
-}
-
-
-function displayLastVisit() {
-    const LastVisit = localStorage.getItem('lastVisit');
-    const currentVisit = new Date();
-    const messageElement = document.createElement('p');
-
-    if (LastVisit) {
-        messageElement.textContent = 'Welcome to St. George Chamber of Commerce!';
-    } else {
-        const diff = Math.floor((currentVisit - new Date(lastVisit)) / (1000 * 3600 * 24));
-        if (diff < 1) {
-            messageElement.textContent = 'Back so soon! Awesome!';
-        } else if (diff === 1) {
-            messageElement.textContent = 'Back so soon! Awesome!';
-        } else {
-            messageElement.textContent = `You last visited ${diff} days ago.`;
-        }
-    }
-
-    document.body.insertBefore(messageElement, document.querySelector('main'));
-    localStorage.setItem('lastVisit', currentVisit);
-}
-
-
-
-
-generateDiscover(data);
-displayLastVisit();
+// getDiscoverCard(discoverdataURL);
+// displayLastVisit();

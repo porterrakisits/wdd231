@@ -88,6 +88,15 @@ function openDialog(item) {
 
 
 
+
+
+
+
+
+
+
+
+
 //      localStorage and page redirect for form
 const contactForm = document.getElementById('contact_form');
 
