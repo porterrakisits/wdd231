@@ -245,12 +245,8 @@ displayMembershipCards(membershipLevels);
 
 
 
-const discoverdataURL = '../data/discover.json';
-const discovercards = document.querySelector('.discover_cards');
-
-// fetch(discoverdataURL)
-//     .then(response => response.json())
-//     .then(data => generateDiscover(data));
+// const discoverdataURL = '../data/discover.json';
+// const discovercards = document.querySelector('.discover_cards');
 
 // async function getDiscoverCard(url) {
 //     const response = await fetch(url);
@@ -259,16 +255,16 @@ const discovercards = document.querySelector('.discover_cards');
 // }
 
 // function generateDiscover(data) {
-//     console.log("this is a test")
+//     // console.log("this is a test")
 //     const container = document.querySelector('.discover_cards');
-//     container.innerHTML = '<p>hello there</p>';
+//     container.innerHTML = '';
 
-//     data.items.forEach(item => {
+//     data.forEach(item => {
 //         const card = document.createElement('div');
-//         card.classList.add('discover_cards');
+//         card.classList.add('discover_card');
 //         card.innerHTML = 
 //             `<figure>
-//                 <img src="images/${item.image}" alt="${item.name}" class="card_img"></img>
+//                 <img src="images/${item.image}" alt="${item.name}" class="card_img" />
 //                 <figcaption>${item.name}</figcaption>
 //             </figure>
 //             <address>${item.address}</address>
@@ -308,3 +304,8 @@ const discovercards = document.querySelector('.discover_cards');
 
 // getDiscoverCard(discoverdataURL);
 // displayLastVisit();
+
+
+
+
+
